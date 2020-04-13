@@ -82,7 +82,8 @@ summary,
 time,
 mark,
 audio,
-video {
+video,
+aside .position {
   margin: 0;
   padding: 0;
   border: 0;
@@ -150,7 +151,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+aside .position {
   font-weight: 700;
   margin-bottom: 3rem;
   color: #3C2E3D;
@@ -165,7 +167,28 @@ h3 {
 h4 {
   font-size: 2rem;
 }
-h5 {
+h5,
+aside .position {
   font-size: 1.5rem;
   text-transform: uppercase;
+}
+aside {
+  background-color: #8BCBC8;
+  padding: 3rem;
+  color: white;
+}
+aside .avatar {
+  width: 16rem;
+  height: 16rem;
+  border-radius: 9999px;
+  margin-bottom: 3rem;
+}
+aside .position {
+  display: block;
+  margin-bottom: 3rem;
+  color: white;
+}
+aside h2 {
+  color: white;
+  margin-bottom: 3rem;
 }

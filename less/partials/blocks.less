@@ -1,0 +1,30 @@
+
+
+// Sidebar
+
+aside {
+    background-color: @sidebar-background-color;
+    padding: @basic-gutter;
+    color: @sidebar-font-color;
+
+    .avatar {
+        width: 16rem;
+        height: 16rem;
+        border-radius: 9999px;
+        margin-bottom: @basic-gutter;
+    }
+
+    .position {
+        &:extend(h5);
+        
+        display: block;
+        margin-bottom: @basic-gutter;
+        color: @sidebar-font-color;
+    }
+
+    h2 {
+        
+        color: @sidebar-font-color;
+        margin-bottom: @basic-gutter;
+    }
+}
