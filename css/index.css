@@ -134,3 +134,14 @@ html,
 body {
   height: 100%;
 }
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-size: 1.5rem;
+  color: #919191;
+}
+p {
+  line-height: 1.6;
+}
