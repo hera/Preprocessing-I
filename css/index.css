@@ -206,10 +206,26 @@ button {
   text-transform: uppercase;
   font-weight: 700;
 }
+@media (min-width: 500px) {
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+  }
+}
 aside {
   background-color: #8BCBC8;
   padding: 3rem;
   color: white;
+}
+@media (min-width: 500px) {
+  aside {
+    position: fixed;
+    height: 100vh;
+    max-width: 300px;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
 }
 aside .avatar {
   width: 16rem;
@@ -243,8 +259,18 @@ aside nav a.active {
   color: white;
 }
 /* Main */
+main {
+  margin: 6rem 3rem;
+}
+@media (min-width: 500px) {
+  main {
+    margin-top: 12rem;
+    margin-right: 6rem;
+    margin-left: 360px;
+  }
+}
 section {
-  margin: 6rem 3rem 3rem 3rem;
+  margin-bottom: 6rem;
 }
 .job {
   margin-bottom: 6rem;

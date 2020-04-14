@@ -1,11 +1,31 @@
 
 
+// Container
+
+.container {
+    @media (min-width: @mobile-breakpoint) {
+        max-width: @container-width;
+        margin: 0 auto;
+        display: flex;
+    }
+}
+
+
+
 // Sidebar
 
 aside {
     background-color: @sidebar-background-color;
     padding: @basic-gutter;
     color: @sidebar-font-color;
+
+    @media (min-width: @mobile-breakpoint) {
+        position: fixed;
+        height: 100vh;
+        max-width: @sidebar-width;
+        padding-top: @basic-gutter * 4;
+        padding-bottom: @basic-gutter * 4;
+    }
 
     .avatar {
         width: 16rem;
@@ -50,8 +70,18 @@ aside {
 
 /* Main */
 
+main {
+    margin: (@basic-gutter * 2) @basic-gutter;
+
+    @media (min-width: @mobile-breakpoint) {
+        margin-top: @basic-gutter * 4;
+        margin-right: @basic-gutter * 2;
+        margin-left: @sidebar-width + 60px;
+    }
+}
+
 section {
-    margin: @basic-gutter * 2 @basic-gutter @basic-gutter @basic-gutter;
+    margin-bottom: @basic-gutter * 2;
 }
 
 
