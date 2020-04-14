@@ -272,6 +272,13 @@ main {
 section {
   margin-bottom: 6rem;
 }
+#tech ul {
+  display: flex;
+  align-items: center;
+}
+#tech ul img {
+  width: 6rem;
+}
 .work-list {
   display: flex;
   flex-wrap: wrap;
