@@ -180,6 +180,32 @@ aside .position {
   font-size: 1.5rem;
   text-transform: uppercase;
 }
+textarea,
+input[type="text"],
+input[type="email"] {
+  border: 1px solid #919191;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+input[type="text"],
+input[type="email"] {
+  line-height: 6rem;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+button {
+  background-color: #FDAE84;
+  line-height: 6rem;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+  padding: 0 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
 aside {
   background-color: #8BCBC8;
   padding: 3rem;
@@ -229,4 +255,12 @@ section {
 }
 .company {
   font-weight: 700;
+}
+#contact form {
+  display: flex;
+  flex-direction: column;
+}
+#contact form input,
+#contact form textarea {
+  margin-bottom: 3rem;
 }

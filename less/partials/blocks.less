@@ -54,6 +54,9 @@ section {
     margin: @basic-gutter * 2 @basic-gutter @basic-gutter @basic-gutter;
 }
 
+
+// Work history
+
 .job {
     margin-bottom: @basic-gutter * 2;
 }
@@ -64,4 +67,18 @@ section {
 
 .company {
     font-weight: 700;
+}
+
+
+// Contact form
+
+#contact {
+    form {
+        display: flex;
+        flex-direction: column;
+
+        input, textarea {
+            margin-bottom: @basic-gutter;
+        }
+    }
 }
