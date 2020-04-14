@@ -19,6 +19,7 @@ input[type="email"] {
 
 button {
     background-color: @button-background-color;
+    .smooth-transition(background-color);
     line-height: 6rem;
     font-size: 1.5rem;
     box-sizing: border-box;
@@ -27,4 +28,9 @@ button {
     border: none;
     text-transform: uppercase;
     font-weight: 700;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken(@button-background-color, 20%);
+    }
 }
