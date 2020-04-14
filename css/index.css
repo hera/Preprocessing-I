@@ -272,6 +272,29 @@ main {
 section {
   margin-bottom: 6rem;
 }
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+@media (min-width: 500px) {
+  .work-list {
+    flex-direction: row;
+  }
+}
+.work-item {
+  margin: 0 3rem 6rem 0;
+  width: 100%;
+}
+@media (min-width: 500px) {
+  .work-item {
+    width: 45%;
+  }
+}
+.work-item img {
+  width: 100%;
+  margin-bottom: 3rem;
+}
 .job {
   margin-bottom: 6rem;
 }
