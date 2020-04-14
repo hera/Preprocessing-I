@@ -258,6 +258,24 @@ aside nav a.active {
   background-color: #FDAE84;
   color: white;
 }
+ul.social {
+  display: flex;
+  margin-bottom: 3rem;
+}
+ul.social a {
+  display: block;
+  background-color: #DAE9E4;
+  color: white;
+  line-height: 6rem;
+  width: 6rem;
+  text-align: center;
+  border-radius: 9999px;
+  margin-right: 3rem;
+  font-size: 2rem;
+}
+ul.social a:hover {
+  color: #FDAE84;
+}
 /* Main */
 main {
   margin: 6rem 3rem;
