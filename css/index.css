@@ -143,6 +143,14 @@ body {
   font-size: 1.5rem;
   color: #919191;
 }
+a {
+  color: #3C2E3D;
+  text-decoration: underline;
+  transition: color 0.4s ease;
+}
+a:hover {
+  color: #FDAE84;
+}
 p {
   line-height: 1.6;
   margin-bottom: 1.5rem;
@@ -183,12 +191,28 @@ aside .avatar {
   border-radius: 9999px;
   margin-bottom: 3rem;
 }
+aside h2 {
+  color: white;
+  margin-bottom: 3rem;
+}
 aside .position {
   display: block;
   margin-bottom: 3rem;
   color: white;
 }
-aside h2 {
+aside nav {
+  display: flex;
+  flex-direction: column;
+  margin: 0 -3rem;
+}
+aside nav a {
+  line-height: 6rem;
+  padding: 0 3rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+aside nav a.active {
+  background-color: #FDAE84;
   color: white;
-  margin-bottom: 3rem;
 }

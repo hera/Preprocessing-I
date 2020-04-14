@@ -14,17 +14,35 @@ aside {
         margin-bottom: @basic-gutter;
     }
 
+    h2 {
+        color: @sidebar-font-color;
+        margin-bottom: @basic-gutter;
+    }
+
     .position {
         &:extend(h5);
-        
+
         display: block;
         margin-bottom: @basic-gutter;
         color: @sidebar-font-color;
     }
 
-    h2 {
+    nav {
+        display: flex;
+        flex-direction: column;
+        margin: 0 -@basic-gutter;
         
-        color: @sidebar-font-color;
-        margin-bottom: @basic-gutter;
+        a {
+            line-height: 6rem;
+            padding: 0 @basic-gutter;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 700;
+
+            &.active {
+                background-color: @nav-active-background-color;
+                color: @nav-active-font-color;
+            }
+        }
     }
 }

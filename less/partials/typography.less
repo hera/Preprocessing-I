@@ -9,10 +9,29 @@ body {
     color: @body-font-color;
 }
 
+
+// Links
+
+a {
+    color: @link-font-color;
+    text-decoration: underline;
+    transition: color 0.4s ease;
+
+    &:hover {
+        color: @link-hover-font-color;
+    }
+}
+
+
+// Paragraphhs
+
 p {
     line-height: 1.6;
     margin-bottom: 1.5rem;
 }
+
+
+// Headings
 
 h1, h2, h3, h4, h5 {
     font-weight: 700;
