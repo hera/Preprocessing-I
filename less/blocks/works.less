@@ -1,0 +1,26 @@
+
+// Works 
+
+.work-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    @media (min-width: @mobile-breakpoint) {
+        flex-direction: row;
+    }
+}
+
+.work-item {
+    margin: 0 @basic-gutter (@basic-gutter * 2) 0;
+    width: 100%;
+
+    @media (min-width: @mobile-breakpoint) {
+        width: 45%;
+    }
+
+    img {
+        width: 100%;
+        margin-bottom: @basic-gutter;
+    }
+}

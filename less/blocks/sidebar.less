@@ -1,0 +1,55 @@
+
+// Sidebar
+
+aside {
+    background-color: @sidebar-background-color;
+    padding: @basic-gutter;
+    color: @sidebar-font-color;
+
+    @media (min-width: @mobile-breakpoint) {
+        position: fixed;
+        height: 100vh;
+        max-width: @sidebar-width;
+        padding-top: @basic-gutter * 4;
+        padding-bottom: @basic-gutter * 4;
+    }
+
+    .avatar {
+        width: 16rem;
+        height: 16rem;
+        border-radius: 9999px;
+        margin-bottom: @basic-gutter;
+    }
+
+    h2 {
+        color: @sidebar-font-color;
+        margin-bottom: @basic-gutter;
+    }
+
+    .position {
+        &:extend(h5);
+
+        display: block;
+        margin-bottom: @basic-gutter;
+        color: @sidebar-font-color;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        margin: 0 -@basic-gutter;
+        
+        a {
+            line-height: 6rem;
+            padding: 0 @basic-gutter;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 700;
+
+            &.active {
+                background-color: @nav-active-background-color;
+                color: @nav-active-font-color;
+            }
+        }
+    }
+}
