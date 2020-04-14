@@ -216,3 +216,17 @@ aside nav a.active {
   background-color: #FDAE84;
   color: white;
 }
+/* Main */
+section {
+  margin: 6rem 3rem 3rem 3rem;
+}
+.job {
+  margin-bottom: 6rem;
+}
+.date,
+.company {
+  margin-bottom: 3rem;
+}
+.company {
+  font-weight: 700;
+}
