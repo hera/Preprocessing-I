@@ -1,19 +1,143 @@
 <!doctype html>
-
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
-  <title>My Resume</title>
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/9f4920d22f.js" crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="css/index.css">
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
 
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
+    <link rel="stylesheet" href="css/index.css">
+
+    <title>Resume</title>
 </head>
-
 <body>
-  <h1>My Resume</h1>
+    <div class="container">
+
+        <aside>
+            <img src="https://picsum.photos/320" alt="photo" class="avatar">
+
+            <h2>Alexander Heraimenka</h2>
+            <span class="position">Student @ Lambda School</span>
+
+            <ul class="social">
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+
+            <nav>
+                <a href="#about" class="active">About</a>
+                <a href="#works">Works</a>
+                <a href="#history">History</a>
+                <a href="#contact">Contact me</a>
+            </nav>
+        </aside>
+
+        <main>
+            <section id="about">
+                <h2>About</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur aspernatur cumque nobis non assumenda voluptatum corrupti dolor fugit ad aliquam deserunt facilis facere modi, recusandae unde ullam nisi laboriosam aliquid.</p>
+            </section>
+            <section id="tech">
+                <h2>Technologies I Use</h2>
+                <ul>
+                    <li><img src="images/html5.png" alt="html5"></li>
+                    <li><img src="images/css3.png" alt="css3"></li>
+                    <li><img src="images/less.png" alt="less"></li>
+                </ul>
+            </section>
+            <section id="works">
+                <h2>Works</h2>
+                <div class="work-list">
+                    <div class="work-item">
+                        <a href="#"><img src="https://picsum.photos/800" alt="screenshot"></a>
+                        Description
+                    </div>
+                    <div class="work-item">
+                        <a href="#"><img src="https://picsum.photos/800" alt="screenshot"></a>
+                        Description
+                    </div>
+                    <div class="work-item">
+                        <a href="#"><img src="https://picsum.photos/800" alt="screenshot"></a>
+                        Description
+                    </div>
+                    <div class="work-item">
+                        <a href="#"><img src="https://picsum.photos/800" alt="screenshot"></a>
+                        Description
+                    </div>
+                    <div class="work-item">
+                        <a href="#"><img src="https://picsum.photos/800" alt="screenshot"></a>
+                        Description
+                    </div>
+                    <div class="work-item">
+                        <a href="#"><img src="https://picsum.photos/800" alt="screenshot"></a>
+                        Description
+                    </div>
+                    <div class="work-item">
+                        <a href="#"><img src="https://picsum.photos/800" alt="screenshot"></a>
+                        Description
+                    </div>
+                    <div class="work-item">
+                        <a href="#"><img src="https://picsum.photos/800" alt="screenshot"></a>
+                        Description
+                    </div>
+                    <div class="work-item">
+                        <a href="#"><img src="https://picsum.photos/800" alt="screenshot"></a>
+                        Description
+                    </div>
+                    <div class="work-item">
+                        <a href="#"><img src="https://picsum.photos/800" alt="screenshot"></a>
+                        Description
+                    </div>
+                </div>
+            </section>
+            <section id="history">
+                <h2>Work history</h2>
+                <div class="job">
+                    <h4>Position</h4>
+                    <div class="date">Apr 1991 - May 1997</div>
+                    <div class="company">Company Inc.</div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Repellendus nihil, dolorem dolor quis quibusdam quidem rerum,
+                        inventore illum incidunt mollitia iure quo, perspiciatis rem
+                        corporis deserunt vel eveniet praesentium temporibus.</p>
+                </div>
+                <div class="job">
+                    <h4>Position</h4>
+                    <div class="date">Apr 1991 - May 1997</div>
+                    <div class="company">Company Inc.</div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Repellendus nihil, dolorem dolor quis quibusdam quidem rerum,
+                        inventore illum incidunt mollitia iure quo, perspiciatis rem
+                        corporis deserunt vel eveniet praesentium temporibus.</p>
+                </div>
+                <div class="job">
+                    <h4>Position</h4>
+                    <div class="date">Apr 1991 - May 1997</div>
+                    <div class="company">Company Inc.</div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Repellendus nihil, dolorem dolor quis quibusdam quidem rerum,
+                        inventore illum incidunt mollitia iure quo, perspiciatis rem
+                        corporis deserunt vel eveniet praesentium temporibus.</p>
+                </div>
+            </section>
+            <section id="contact">
+                <h2>Contact me</h2>
+                <form action="">
+                    <input type="text" name="name" placeholder="Your name">
+                    <input type="email" name="email" placeholder="E-mail">
+                    <textarea name="message" id="" rows="10" placeholder="Message"></textarea>
+                    <button>Submit</button>
+                </form>
+            </section>
+        </main>
+        
+    </div>
 </body>
 </html>
